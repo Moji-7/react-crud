@@ -1,7 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Create from "./components/create";
-import { BrowserRouter as Router, Route,Link,Routes,Outlet } from "react-router-dom";
+import  List from "./components/list";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes,
+  Outlet,
+} from "react-router-dom";
+
 
 function App() {
   return (
@@ -11,10 +19,10 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/create">Home</Link>
+                <Link to="/create">create</Link>
               </li>
               <li>
-                <Link to="/list">Blogs</Link>
+                <Link to="/list">List</Link>
               </li>
               <li>
                 <Link to="/update">Contact</Link>
@@ -25,9 +33,10 @@ function App() {
           <Outlet />
 
           <Routes>
-            <Route path="/create" element={<Create />}>
-              <Route index element={<Create />} />
-            </Route>
+      
+              <Route path="/create" index element={<Create />} />
+              <Route path="/list" index element={<List />} />
+
           </Routes>
         </Router>
       </header>

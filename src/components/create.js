@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Checkbox, Form } from "semantic-ui-react";
 import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import axios from "axios";
 const Create = () => {
   const [firstName, setFirstName] = useState("");
@@ -8,6 +9,7 @@ const Create = () => {
   const [password, SetPassword] = useState("");
   const [userName, SetUserName] = useState("");
   const [checkBox, setCheckBox] = useState(false);
+  
   const postData = () => {
     console.log(firstName);
     axios.post("https://localhost:7124/Login/Register", {
@@ -17,7 +19,9 @@ const Create = () => {
       password,
     });
   };
+  const { state } = useLocation();
   return (
+    
     <Form className="create-form" onSubmit={postData}>
       <Form.Field>
         <label>First Name</label>
@@ -54,6 +58,7 @@ const Create = () => {
         />
       </Form.Field>
       <Button type="submit">Submit</Button>
+      <div>{state.userName}</div>
     </Form>
   );
 };
