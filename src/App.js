@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import Create from "./components/create";
 import  List from "./components/list";
@@ -9,7 +9,8 @@ import {
   Routes,
   Outlet,
 } from "react-router-dom";
-
+import New from "./components/campaigns/New";
+import { Alert } from "./components/campaigns/Alert";
 
 function App() {
   return (
@@ -27,6 +28,12 @@ function App() {
               <li>
                 <Link to="/update">Contact</Link>
               </li>
+              <li>
+                <Link to="/campaigns/New">Campaign</Link>
+              </li>
+              <li>
+                <Link  to="/campaigns/Alert">alert</Link>
+              </li>
             </ul>
           </nav>
 
@@ -36,6 +43,8 @@ function App() {
       
               <Route path="/create" index element={<Create />} />
               <Route path="/list" index element={<List />} />
+              <Route path="/campaigns/New" index element={<New />} />
+              <Route path="/campaigns/Alert" index element={<Alert />} />
 
           </Routes>
         </Router>

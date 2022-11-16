@@ -1,14 +1,14 @@
 import React from "react";
-import { Button, Checkbox, Form } from "semantic-ui-react";
+import { Button, Form } from "semantic-ui-react";
 import { useState } from "react";
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import axios from "axios";
 const Create = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [password, SetPassword] = useState("");
   const [userName, SetUserName] = useState("");
-  const [checkBox, setCheckBox] = useState(false);
+ // const [checkBox, setCheckBox] = useState(false);
   
   const postData = () => {
     console.log(firstName);
@@ -19,7 +19,7 @@ const Create = () => {
       password,
     });
   };
-  const { state } = useLocation();
+  // const { state } = useLocation();
   return (
     
     <Form className="create-form" onSubmit={postData}>
@@ -51,14 +51,14 @@ const Create = () => {
           onChange={(e) => SetPassword(e.target.value)}
         />
       </Form.Field>
-      <Form.Field>
+      {/* <Form.Field>
         <Checkbox
           label="I agree to the Terms and Conditions"
           onChange={(e) => setCheckBox(e.target.value)}
         />
-      </Form.Field>
+      </Form.Field> */}
       <Button type="submit">Submit</Button>
-      <div>{state.userName}</div>
+      {/* <div>{state.userName}</div> */}
     </Form>
   );
 };
