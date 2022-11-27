@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+.dark {background-color: black;}
+.light {background-color: red;}
 .App {
   text-align: center;
 }
@@ -23,13 +26,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
 
 .App-link {
@@ -47,4 +44,8 @@
 
 .bg-red{
   background-color: rebeccapurple;
+}
+
+.score{
+  font-size: 42px;
 }

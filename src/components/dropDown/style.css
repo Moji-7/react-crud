@@ -1,0 +1,23 @@
+
+
+.rand1{
+    background-color: red;
+    margin: 6px;
+    padding: 6px;
+    border: 2px;
+    font-size: 36;
+}
+.rand2{
+    background-color: greenyellow;
+    margin: 6px;
+    padding: 6px;
+    border: 2px;
+    font-size: 36;
+}
+.rand3{
+    background-color: cyan;
+    margin: 6px;
+    padding: 6px;
+    border: 2px;
+    font-size: 36;
+}

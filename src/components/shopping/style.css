@@ -1,0 +1,24 @@
+
+.container{
+width: 100%;
+
+}
+.productItem {
+    width: 70%;
+    float: left;
+    background-color: aliceblue;
+}
+.shoppingCard {
+    width: 28%;
+    float: left;
+    background-color: darkorange;
+}
+.itemName{
+    font-size: 36px;
+}
+.label {
+    background-color: greenyellow;
+    font-size: 16px;
+    padding: 2px;
+    margin: 2px;
+}

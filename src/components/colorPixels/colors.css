@@ -1,0 +1,26 @@
+.box {
+  width: 32px;
+  height: 32px;
+  border: 1px;
+  border-radius: 2px;
+  border-color: aliceblue;
+  background-color: darkgray;
+  padding: 2px;
+  margin: 2px;
+  cursor: pointer;
+}
+.box > .green {
+  padding: 2px;
+  margin: 2px;
+  background-color: green;
+}
+.box > .red {
+  padding: 2px;
+  margin: 2px;
+  background-color: red;
+}
+.box .blue {
+  padding: 2px;
+  margin: 2px;
+  background-color: blue;
+}
