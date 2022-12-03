@@ -29,7 +29,7 @@ export const MyDropdown = () => {
 
   return (
     <>
-      <div>salam</div>
+      <div>drop dwon changing</div>
       <select onChange={(e) => handleChange(e)}>{options}</select>
       <hr />
       this is options onChange
