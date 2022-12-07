@@ -54,7 +54,7 @@ export const Alert = () => {
   return (
     <>
  
-
+<div>alert comming :)</div>
       {/* <input
         onChange={(e) => changed(e)}
         name="name"
