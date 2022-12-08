@@ -20,7 +20,7 @@ export const ShoppingCard = () => {
         return (
           <div key={item.id}>
             <button onClick={(e) => handleClick(e, { type: "add", item: item })}>
-              +
+              + increment
             </button>
             {item.name}
             <button onClick={(e) => handleClick(e, { type: "add", item: item })}>
