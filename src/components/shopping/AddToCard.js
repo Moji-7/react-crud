@@ -4,9 +4,7 @@ import { shoppingContext } from "./Dashboard";
 export const AddToCard = (props) => {
   let { shoppingCardReducer, dispatch } = useContext(shoppingContext);
 
-  //////////////////
-
-  
+  /////////////
   const handleAddToCard = (e, item) => {
     e.preventDefault();
 
@@ -22,7 +20,6 @@ export const AddToCard = (props) => {
         AddToCard ({props.item.name})
       </button>
    
-     
     </>
   );
 };
